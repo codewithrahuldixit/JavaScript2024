@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="id1">TeachToTech</h1>
+    <h2 class = "blue" >This is Heading 2</h2>
+    <h2 class = "blue">This is Heading 2</h2>
+    <h2 >This is Heading 2</h2>
+    <script>
+        var element = document.getElementById('id1');
+        element.style.color='Red';
+        document.getElementsByClassName('blue')[0].style.color='blue';
+        document.getElementsByClassName('blue')[1].style.color='green';
+        document.getElementsByTagName('h2')[2].style.color='orange';
+        document.querySelectorAll('h2')[2].style.color='grey';
+    </script>
+</body>
+</html>
