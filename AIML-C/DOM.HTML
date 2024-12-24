@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .c1{
+            color: red;
+        }
+        .c2{
+            font-weight: 700;
+            font-size: xx-large;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="id1">This is first heading</h1>
+    <h1 class="blue">this is second h1</h1>
+    <h1 class="blue">this is Third</h1>
+    <h2>This is h2</h2>
+    <p class="c1">Lorem, <strong>ipsum dolor sit amet consectetur adipisicing elit. </strong>Accusamus 
+        corporis sint ipsum iure quis animi qui maiores non assumenda dolorum accusantium, 
+        praesentium facere ex quibusdam quas ea modi saepe officia!</p>
+        <script>
+                   var element= document.getElementById('id1');
+                   element.style.color='red';
+                   var eleclass=document.getElementsByClassName('blue');
+                   
+                   eleclass[0].style.color="blue";
+                   eleclass[1].style.color='grey';
+                   document.querySelector('p').classList.add('c2');
+                   document.querySelector('p').classList.remove('c1');
+        </script>
+</body>
+</html>
